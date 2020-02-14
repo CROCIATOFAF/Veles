@@ -1,0 +1,37 @@
+.header-slider {
+  min-height: 464px;
+  background: url("../img/underwater-hotel.png") #0e1933;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-slider__wrapper {
+  width: 971px;
+  margin: 0 auto;
+}
+
+
+.header-slider__header {
+  @include normal-text;
+  font-weight: 300;
+  color: $second-text-color;
+  font-size: 72px;
+  line-height: 85px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.1rem;
+  padding-top: 133px;
+}
+
+.header-slider__text {
+  @include normal-text;
+  color: $second-text-color;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 132px;
+  padding: 0 215px;
+}

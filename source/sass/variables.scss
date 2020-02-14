@@ -1,0 +1,62 @@
+//devices
+$tablet-width: 1023px;
+$tablet-min-width: 768px;
+$mobile-width: 767px;
+$desktop-width: 1024px;
+//colors
+$buttons-color: #FF7931;
+$background-color-light: #ffffff;
+$background-color-dark: #f7f7f7;
+$mobile-link-color: #F9F9FC;
+$main-text-color: #000000;
+$second-text-color: #ffffff;
+$text-color-hover: #FF7931;
+$footer-copyright-text-color: rgba(0, 0, 0, 0.2);
+$border-copyright-color: rgba(0, 0, 0, 0.2);
+//buttons
+$buttons-numbers-mobile: #48494D;
+$toggle-button-color: #FF7931;
+//retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+//screen-width
+$mobile-max-width: 767px;
+$tablet-max-width: 1023px;
+
+//social-buttons
+$social-button-hover: crimson;
+
+//fonts
+$font-stack-one: "Raleway", Arial, sans-serif;
+$font-stack-two: "Playfair Display", Georgia, serif;
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin normal-text {
+  font: {
+    family: $font-stack-one;
+    size: 14px;
+    weight: 400;
+  }
+  line-height: 150%;
+}
+
+@mixin large-text {
+  font: {
+    family: $font-stack-two;
+    size: 35px;
+    weight: 900;
+  }
+  line-height: 47px;
+}

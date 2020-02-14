@@ -1,3 +1,21 @@
-h1 {
-  color: red;
-}
+@import "variables.scss";
+@import "scaffolding.scss";
+@import "fonts.scss";
+@import "content.scss";
+
+//blocks
+@import "blocks/header-slider.scss";
+@import "blocks/page-header.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/button.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/news.scss";
+@import "blocks/reviews.scss";
+@import "blocks/footer.scss";
+@import "blocks/articles-slider.scss";
+// @import "blocks/footer.scss";
+// @import "blocks/container.scss";
+// @import "blocks/promo.scss";
+// @import "blocks/wrapper.scss";
+// @import "blocks/modal-window.scss";
+// @import "blocks/overlay.scss";

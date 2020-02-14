@@ -1,0 +1,126 @@
+//raleway
+//Playfair Display
+//Proxima Nova
+//SF UI Display
+//Avenir Next
+
+// @font-face {
+//   font-family: "PT Mono";
+//   font-display: swap;
+//   src: local("PT Mono"),
+//     url("../fonts/pt-mono-v7-cyrillic_latin-regular.woff2") format("woff2"),
+//     url("../fonts/pt-mono-v7-cyrillic_latin-regular.woff") format("woff");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+//   /* roboto-regular - cyrillic_latin */
+// @font-face {
+//   font-family: "Roboto";
+//   font-display: swap;
+//   src: local("Roboto"), local("Roboto-Regular"),
+//     url("../fonts/roboto-v20-cyrillic_latin-regular.woff2") format("woff2"),
+//     url("../fonts/roboto-v20-cyrillic_latin-regular.woff") format("woff");
+//   font-style: normal;
+//   font-weight: 400;
+// }
+// /* roboto-500 - cyrillic_latin */
+// @font-face {
+//   font-family: "Roboto";
+//   font-display: swap;
+//   src: local("Roboto Medium"), local("Roboto-Medium"),
+//     url("../fonts/roboto-v20-cyrillic_latin-500.woff2") format("woff2"),
+//     url("../fonts/roboto-v20-cyrillic_latin-500.woff") format("woff");
+//   font-style: normal;
+//   font-weight: 500;
+// }
+// /* roboto-700 - cyrillic_latin */
+// @font-face {
+//   font-family: "Roboto";
+//   font-display: swap;
+//   src: local("Roboto Bold"), local("Roboto-Bold"),
+//     url("../fonts/roboto-v20-cyrillic_latin-700.woff2") format("woff2"),
+//     url("../fonts/roboto-v20-cyrillic_latin-700.woff") format("woff");
+//   font-style: normal;
+//   font-weight: 700;
+// }
+//   /* roboto-condensed-regular - cyrillic_latin */
+// @font-face {
+//   font-family: "Roboto Condensed";
+//   font-display: swap;
+//   src: local("Roboto Condensed"), local("RobotoCondensed-Regular"),
+//     url("../fonts/roboto-condensed-v18-cyrillic_latin-regular.woff2") format("woff2"),
+//     url("../fonts/roboto-condensed-v18-cyrillic_latin-regular.woff") format("woff");
+//   font-style: normal;
+//   font-weight: 400;
+// }
+// /* roboto-condensed-700 - cyrillic_latin */
+// @font-face {
+//   font-family: "Roboto Condensed";
+//   font-display: swap;
+//   src: local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"),
+//     url("../fonts/roboto-condensed-v18-cyrillic_latin-700.woff2") format("woff2"),
+//     url("../fonts/roboto-condensed-v18-cyrillic_latin-700.woff") format("woff");
+//   font-style: normal;
+//   font-weight: 700;
+// }
+
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: local("Raleway"),
+    url("../fonts/Raleway-Light.woff2") format("woff2"),
+    url("../fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: local("Raleway"),
+    url("../fonts/Raleway-Regular.woff2") format("woff2"),
+    url("../fonts/Raleway-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: local("Raleway"),
+    url("../fonts/Raleway-Medium.woff2") format("woff2"),
+    url("../fonts/Raleway-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: local("Raleway"),
+    url("../fonts/Raleway-SemiBold.woff2") format("woff2"),
+    url("../fonts/Raleway-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: local("Raleway"),
+    url("../fonts/Raleway-Bold.woff2") format("woff2"),
+    url("../fonts/Raleway-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-display: swap;
+  src: local("Playfair Display"),
+    url("../fonts/PlayfairDisplay-Black.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}

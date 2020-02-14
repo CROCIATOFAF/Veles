@@ -1,0 +1,33 @@
+.main-nav {
+  padding-top: 60px;
+  padding-bottom: 47px;
+}
+
+.main-nav__header {
+  @include large-text;
+  color: $main-text-color;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 46px;
+  text-transform: none;
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__link {
+  @include normal-text;
+  color: $main-text-color;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

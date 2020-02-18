@@ -1,0 +1,15 @@
+.button {
+  height: 45px;
+  border: 2px solid $buttons-color;
+  box-sizing: border-box;
+  @include normal-text;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 30px;
+  color: $second-text-color;
+}

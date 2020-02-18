@@ -4,18 +4,20 @@ $tablet-min-width: 768px;
 $mobile-width: 767px;
 $desktop-width: 1024px;
 //colors
-$buttons-color: #FF7931;
+$buttons-color: #ff7931;
 $background-color-light: #ffffff;
 $background-color-dark: #f7f7f7;
-$mobile-link-color: #F9F9FC;
+$mobile-link-color: #f9f9fc;
 $main-text-color: #000000;
 $second-text-color: #ffffff;
-$text-color-hover: #FF7931;
+$text-color-hover: #ff7931;
 $footer-copyright-text-color: rgba(0, 0, 0, 0.2);
 $border-copyright-color: rgba(0, 0, 0, 0.2);
 //buttons
-$buttons-numbers-mobile: #48494D;
-$toggle-button-color: #FF7931;
+$buttons-numbers-mobile: #48494d;
+$toggle-button-color: #ff7931;
+//links
+$link-button-background: rgba(0, 0, 0, 0.7);
 //retina
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
@@ -23,12 +25,9 @@ $retina-dppx: 1.5dppx;
 $mobile-max-width: 767px;
 $tablet-max-width: 1023px;
 
-//social-buttons
-$social-button-hover: crimson;
-
 //fonts
-$font-stack-one: "Raleway", Arial, sans-serif;
-$font-stack-two: "Playfair Display", Georgia, serif;
+$font-stack-one: "raleway", arial, sans-serif;
+$font-stack-two: "playfair display", georgia, serif;
 
 @mixin visually-hidden {
   position: absolute;
@@ -50,6 +49,8 @@ $font-stack-two: "Playfair Display", Georgia, serif;
     weight: 400;
   }
   line-height: 150%;
+  margin: 0;
+  padding: 0;
 }
 
 @mixin large-text {
@@ -59,4 +60,6 @@ $font-stack-two: "Playfair Display", Georgia, serif;
     weight: 900;
   }
   line-height: 47px;
+  margin: 0;
+  padding: 0;
 }

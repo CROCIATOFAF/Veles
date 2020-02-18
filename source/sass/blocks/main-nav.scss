@@ -30,4 +30,14 @@
   line-height: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $text-color-hover;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }

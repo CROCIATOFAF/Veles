@@ -1,0 +1,22 @@
+.articles-slider {
+  display: flex;
+  flex: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 97px;
+}
+
+.articles-slider__link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: block;
+
+  &:hover {
+    transform: scaleY(1.3);
+  }
+}
+
+.articles-slider__link img {
+  display: block;
+}

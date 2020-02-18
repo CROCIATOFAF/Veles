@@ -1,4 +1,21 @@
+.main {
+  padding-top: 99px;
+}
+
 .main__wrapper {
-  width: 1440px;
+  max-width: 1174px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main__container {
+  width: 760px;
+}
+
+@media (max-width: $tablet-width) {
+  .main__wrapper {
+    max-width: 1023px;
+  }
 }

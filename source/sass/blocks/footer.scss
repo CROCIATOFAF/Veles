@@ -81,6 +81,8 @@
   }
 }
 
-@media (max-width: $mobile-max-width) {
-
+@media (max-width: $mobile-width) {
+  .footer {
+    @include visually-hidden;
+  }
 }

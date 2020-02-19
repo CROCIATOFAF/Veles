@@ -92,3 +92,29 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: $mobile-width) {
+  .news {
+    padding: 0 16px;
+  }
+
+  .news__link {
+    margin-bottom: 24px;
+  }
+
+  .news__link img {
+    display: block;
+    width: 288px;
+  }
+
+  .news__content-wrapper {
+    flex-direction: column;
+  }
+
+  .news__header {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+}

@@ -9,6 +9,9 @@
 .header-slider__wrapper {
   max-width: 971px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -23,7 +26,7 @@
   margin: 0;
   padding: 0;
   letter-spacing: 0.1rem;
-  padding-top: 133px;
+  padding-top: 44px;
 }
 
 .header-slider__text {
@@ -35,9 +38,38 @@
   padding: 0 215px;
 }
 
+.header-slider__link-button {
+  @include normal-text;
+  background: $buttons-color;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-weight: normal;
+  width: 99px;
+  height: 27px;
+  padding: 0;
+  color: $second-text-color;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 62px;
+}
+
 @media (max-width: $tablet-width) {
   .header-slider__header {
     font-size: 55px;
-    padding-top: 90px;
+    padding-top: 44px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header-slider__header {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 150%;
+  }
+
+  .header-slider__text {
+    padding: 0 21px;
   }
 }

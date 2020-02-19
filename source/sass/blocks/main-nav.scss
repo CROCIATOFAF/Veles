@@ -48,8 +48,16 @@
     max-width: 1023px;
   }
 
+  .main-nav__header {
+    font-size: 30px;
+  }
+
   .main-nav__list {
     display: flex;
     width: 100%;
+  }
+
+  .main-nav__link {
+    font-size: 13px;
   }
 }

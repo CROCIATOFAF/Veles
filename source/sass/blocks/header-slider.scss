@@ -7,7 +7,7 @@
 }
 
 .header-slider__wrapper {
-  width: 971px;
+  max-width: 971px;
   margin: 0 auto;
 }
 
@@ -33,4 +33,11 @@
   margin: 0;
   margin-top: 132px;
   padding: 0 215px;
+}
+
+@media (max-width: $tablet-width) {
+  .header-slider__header {
+    font-size: 55px;
+    padding-top: 90px;
+  }
 }

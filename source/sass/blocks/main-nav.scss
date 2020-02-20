@@ -13,6 +13,30 @@
   padding: 0;
   margin-bottom: 46px;
   text-transform: none;
+  position: relative;
+}
+
+.main-nav__open-toggle {
+  display: block;
+  border: 0;
+  background: transparent;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../img/hamburger-menu.svg");
+    width: 50px;
+    height: 50px;
+    left: 0;
+    bottom: 39px;
+    border: 0;
+    background-color: $buttons-color;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .main-nav__list {
@@ -40,8 +64,22 @@
   }
 
   &:active {
-    opacity: 0.5;
-    animation: blur-out-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    // opacity: 0.5;
+    animation: blur-out-expand 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+}
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
   }
 }
 
@@ -55,6 +93,10 @@
     -webkit-filter: blur(12px) opacity(0%);
             filter: blur(12px) opacity(0%);
   }
+}
+
+.main-nav__open-toggle {
+  display: none;
 }
 
 @media (max-width: $tablet-width) {
@@ -112,33 +154,80 @@
   }
 
   @keyframes focus-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
   }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
 
-@keyframes blur-out-expand {
-  0% {
-    -webkit-filter: blur(0.01);
-            filter: blur(0.01);
+  @keyframes blur-out-expand {
+    0% {
+      -webkit-filter: blur(0.01);
+              filter: blur(0.01);
+    }
+    100% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px) opacity(0%);
+              filter: blur(12px) opacity(0%);
+    }
   }
-  100% {
-    letter-spacing: 1em;
-    -webkit-filter: blur(12px) opacity(0%);
-            filter: blur(12px) opacity(0%);
-  }
-}
 
   .main-nav__header {
     margin-bottom: 0;
     padding: 0 11px;
+  }
+
+  .main-nav__contacts-wrapper {
+   padding-top: 5px;
+   padding-bottom: 27px;
+ }
+
+  .main-nav__accordeon-wrapper {
+    // width: 400px;
+    // margin-bottom: 10px;
+  }
+
+  .main-nav__open-toggle {
+    display: block;
+
+    .opened &:before {
+      content: "";
+      background: url("../img/close-icon.svg");
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      bottom: 781px;
+      left: 250px;
+      cursor: pointer;
+    }
+
+    .closed &:before {
+      content: "";
+      cursor: pointer;
+      position: absolute;
+      background: url("../img/hamburger-menu.svg");
+      width: 50px;
+      height: 50px;
+      left: 0;
+      bottom: 39px;
+      border: 0;
+      background-color: $buttons-color;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 3;
+    }
+  }
+
+  .main-nav__accordeon-content {
+    .closed & {
+      display: none;
+    }
   }
 }

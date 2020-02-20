@@ -14,9 +14,12 @@
 
   <header class="header">
     <div class="header__wrapper">
-      <nav class="main-nav">
+      <nav class="main-nav js-accordeon">
+        <button class="main-nav__open-toggle js-accordeon-head">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <h3 class="main-nav__header">Новости культуры</h3>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__accordeon-content">
           <li class="main-nav__list-item">
             <a class="main-nav__link" href="#">Новости</a>
           </li>
@@ -296,6 +299,7 @@
     </div>
   </footer>
   <script src="js/fslightbox.js"></script>
+  <script src="js/toggle.js"></script>
 </body>
 
 </html>
